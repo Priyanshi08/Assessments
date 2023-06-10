@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="RegistrationForm.css" />
+  </head>
+  <body>
+    <form id="registrationForm" onsubmit="validateForm(event)">
+      <table>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="firstName"
+              class="form-field"
+              placeholder="Enter your first name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="lastName"
+              class="form-field"
+              placeholder="Enter your last name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              class="form-field"
+              placeholder="it should contain @"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="mobile">Mobile:</label></td>
+          <td>
+            <input
+              type="tel"
+              id="mobile"
+              class="form-field"
+              placeholder="only 10 digits are allowed"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Male"
+              class="form-field"
+            />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+              class="form-field"
+            />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" class="form-field" /></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea id="address" class="form-field"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="city">City:</label></td>
+          <td><input type="text" id="city" class="form-field" /></td>
+        </tr>
+        <tr>
+          <td><label for="areaPin">Area PIN:</label></td>
+          <td><input type="text" id="areaPin" class="form-field" /></td>
+        </tr>
+        <tr>
+          <td><label for="state">State:</label></td>
+          <td><input type="text" id="state" class="form-field" /></td>
+        </tr>
+        <tr>
+          <td><label for="qualification">Qualification:</label></td>
+          <td>
+            <select id="qualification" class="form-field">
+              <option value="">Select Qualification:</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="doctorate">Doctorate Degree</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Specialization:</label></td>
+          <td>
+            <input
+              type="checkbox"
+              id="cs"
+              class="form-field"
+              value="Computer Science"
+            />
+            <label for="cs">Computer Science</label><br />
+            <input
+              type="checkbox"
+              id="it"
+              class="form-field"
+              value="Information Technology"
+            />
+            <label for="it">Information Technology</label><br />
+            <input
+              type="checkbox"
+              id="ca"
+              class="form-field"
+              value="Computer Architecture"
+            />
+            <label for="ca">Computer Architecture</label><br />
+            <input
+              type="checkbox"
+              id="tc"
+              class="form-field"
+              value="Telecommunication"
+            />
+            <label for="tc">Tele Communication</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" class="form-field" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Registered" class="btn" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="RegistrationForm.js"></script>
+  </body>
+</html>
