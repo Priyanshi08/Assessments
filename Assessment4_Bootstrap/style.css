@@ -1,0 +1,18 @@
+body{
+    background-color:#f8f9fa;
+}
+.bi-person{
+    position: relative;
+    top: 30px;
+    left:20px;
+}
+.bi-key{
+    position: relative;
+    top: 30px;
+    left:20px;
+}
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius:20px;
+}
